@@ -1,5 +1,6 @@
 # URL Overrides for KeePass
-Here I collect url override scripts for KeePass in Linux and Windows systems.
+Here I collect url override scripts for KeePass in Linux and Windows systems. 
+
 
 ## SSH
 
@@ -181,10 +182,10 @@ cmd://teamviewer -i "{USERNAME}" --Password "{PASSWORD}"
 * **Scheme:** `winbox`
 * **Command:**
 ```
-cmd://{ENV_PROGRAMFILES_X86}\winbox.exe '{BASE:RMVSCM}' '{USERNAME}' '{PASSWORD}'
+cmd://"{ENV_PROGRAMFILES_X86}\winbox.exe" '{BASE:RMVSCM}' '{USERNAME}' '{PASSWORD}'
 ```
 
-Сохраните `winbox.exe` в `C:\Program Files (x86)\winbox.exe`.
+Put the `winbox.exe` to `C:\Program Files (x86)\winbox.exe` folder.
 
 ##### Winbox <sup>[linux]</sup>
 
