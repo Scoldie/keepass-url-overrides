@@ -8,14 +8,14 @@ Here I collect url override scripts for KeePass in Linux and Windows systems.
 * **Scheme:** `ssh`
 * **Command:**
 ```
-cmd://"{ENV_PROGRAMFILES_X86}\PuTTY\putty.exe" -ssh "{USERNAME}@{URL:HOST}" -P {BASE:PORT} -pw "{PASSWORD}" 
+cmd://"{ENV_PROGRAMFILES_X86}\PuTTY\putty.exe" -ssh "{USERNAME}@{URL:HOST}" -P {URL:PORT} -pw "{PASSWORD}" 
 ```
 
 ##### Xshell 7 <sup>[windows]</sup>
 * **Scheme:** `ssh|telnet`
 * **Command:**
 ```
-cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xshell 7\Xshell.exe"  "{URL:SCM}://{USERNAME}:{PASSWORD}@{URL:HOST}:{BASE:PORT}" -newtab "{TITLE}"
+cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xshell 7\Xshell.exe"  "{URL:SCM}://{USERNAME}:{PASSWORD}@{URL:HOST}:{URL:PORT}" -newtab "{TITLE}"
 ```
 
 ##### OpenSSH Client <sup>[linux]</sup>
@@ -149,6 +149,22 @@ cmd://"explorer.exe" 'ftp://{USERNAME}:{PASSWORD}@{BASE:RMVSCM}'
 cmd://filezilla 'ftp://{USERNAME}:{PASSWORD}@{BASE:RMVSCM}'
 ```
 
+##### Xftp Ftp Client  <sup>[windows]</sup>
+
+* **Scheme:** `ftp`
+* **Command:**
+```
+cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xftp 7\Xftp.exe"  "{URL:SCM}://{USERNAME}:{PASSWORD}@{URL:HOST}:{URL:PORT}/{URL:PATH}"
+```
+
+##### Xftp sFtp Client  <sup>[windows]</sup>
+
+* **Scheme:** `sftp`
+* **Command:**
+```
+cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xftp 7\Xftp.exe"  "{URL:SCM}://{USERNAME}:{PASSWORD}@{URL:HOST}:{URL:PORT}/{URL:PATH}"
+```
+
 ##### Nautilus / Thunar / Dolphin <sup>[linux]</sup>
 
 * **Scheme:** `smb`
@@ -199,7 +215,7 @@ Put the `winbox.exe` to `C:\Program Files (x86)\winbox.exe` folder.
 * **Scheme:** `winbox`
 * **Command:**
 ```
-cmd://winbox '{BASE:RMVSCM}' '{USERNAME}' '{PASSWORD}'
+cmd://winbox "{BASE:RMVSCM}" "{USERNAME}" "{PASSWORD}"
 ```
 
 *I use winbox from [AUR](https://aur.archlinux.org/packages/winbox/).*
