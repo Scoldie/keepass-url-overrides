@@ -11,6 +11,13 @@ Here I collect url override scripts for KeePass in Linux and Windows systems.
 cmd://"{ENV_PROGRAMFILES_X86}\PuTTY\putty.exe" -ssh "{USERNAME}@{URL:HOST}" -P {BASE:PORT} -pw "{PASSWORD}" 
 ```
 
+##### Xshell 7 <sup>[windows]</sup>
+* **Scheme:** `ssh`
+* **Command:**
+```
+cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xshell 7\Xshell.exe"  ssh://"{USERNAME}:{PASSWORD}@{URL:HOST}:{BASE:PORT}" -newtab "{TITLE}"
+```
+
 ##### OpenSSH Client <sup>[linux]</sup>
 
 * **Scheme:** `ssh`
@@ -182,7 +189,7 @@ cmd://teamviewer -i "{USERNAME}" --Password "{PASSWORD}"
 * **Scheme:** `winbox`
 * **Command:**
 ```
-cmd://"{ENV_PROGRAMFILES_X86}\winbox.exe" '{BASE:RMVSCM}' '{USERNAME}' '{PASSWORD}'
+cmd://"{ENV_PROGRAMFILES_X86}\winbox.exe" "{BASE:RMVSCM}" "{USERNAME}" "{PASSWORD}"
 ```
 
 Put the `winbox.exe` to `C:\Program Files (x86)\winbox.exe` folder.
