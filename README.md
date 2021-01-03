@@ -12,10 +12,10 @@ cmd://"{ENV_PROGRAMFILES_X86}\PuTTY\putty.exe" -ssh "{USERNAME}@{URL:HOST}" -P {
 ```
 
 ##### Xshell 7 <sup>[windows]</sup>
-* **Scheme:** `ssh`
+* **Scheme:** `ssh|telnet`
 * **Command:**
 ```
-cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xshell 7\Xshell.exe"  ssh://"{USERNAME}:{PASSWORD}@{URL:HOST}:{BASE:PORT}" -newtab "{TITLE}"
+cmd://"{ENV_PROGRAMFILES_X86}\NetSarang\Xshell 7\Xshell.exe"  "{URL:SCM}://{USERNAME}:{PASSWORD}@{URL:HOST}:{BASE:PORT}" -newtab "{TITLE}"
 ```
 
 ##### OpenSSH Client <sup>[linux]</sup>
